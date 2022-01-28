@@ -7,6 +7,6 @@ lines = open("jawiki-country.json").readlines
 lines.each do |line|
     data = JSON.load(line.chomp)
     if data["title"] == "イギリス"
-        p data
+        puts data["text"]
     end
 end
